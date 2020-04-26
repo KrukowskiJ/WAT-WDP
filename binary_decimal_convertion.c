@@ -7,7 +7,7 @@ int dec_to_bin(int ID){
     int b;
     printf("Enter decimal number:\n(10) ");
     scanf("%d",&b);
-        if(b <= 75068){
+        if(b <= ID && b>=0){
             for(i = 0; b > 0; i++){
                 tab[i] = b % 2;
                 b = b / 2;
@@ -15,14 +15,16 @@ int dec_to_bin(int ID){
             printf("Binary of given number is:\n(2) ");
             for(i;i > 0;i--)
                 printf("%d",tab[i-1]);
-        }else
+        }else if(b > ID)
             puts("Your number is too high!");
+         else
+            puts("Your number is too low!");
 }
 int bin_to_dec(long long BIN_ID){
-    long int x=0;
-    int i,a,n;
+    int i,a,x=0;
+    long long n;
 	printf("Enter any binary number:\n(2) ");
-	scanf("%ld", &n);
+	scanf("%lld", &n);
 
     if(n <= BIN_ID){
         for(i = 0; n != 0; ++i){
