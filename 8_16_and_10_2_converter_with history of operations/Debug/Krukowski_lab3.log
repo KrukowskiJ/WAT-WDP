@@ -1,0 +1,11 @@
+﻿  Krukowski_lab3.c
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(110,31): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(155,19): warning C4033: 'oct_hex' must return a value
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(167,15): warning C4033: 'oct_hex' must return a value
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(202,16): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'History_of_operations *'
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(218,28): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'History_of_operations *'
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(228,28): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'History_of_operations *'
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(148): warning C4715: 'hex_oct': not all control paths return a value
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(188): warning C4715: 'oct_hex': not all control paths return a value
+C:\Users\48502\Desktop\Krukowski_lab3\Krukowski_lab3.c(248): warning C4715: 'print': not all control paths return a value
+  Krukowski_lab3.vcxproj -> C:\Users\48502\Desktop\Krukowski_lab3\Debug\Krukowski_lab3.exe
