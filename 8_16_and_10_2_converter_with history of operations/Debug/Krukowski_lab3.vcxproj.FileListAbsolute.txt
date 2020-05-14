@@ -1,2 +1,4 @@
 C:\Users\48502\Desktop\Krukowski_lab3\Debug\Krukowski_lab3.exe
 C:\Users\48502\Desktop\Krukowski_lab3\Debug\Krukowski_lab3.pdb
+C:\Users\48502\Desktop\Wat-WDP\8_16_and_10_2_converter_with history of operations\Debug\Krukowski_lab3.exe
+C:\Users\48502\Desktop\Wat-WDP\8_16_and_10_2_converter_with history of operations\Debug\Krukowski_lab3.pdb

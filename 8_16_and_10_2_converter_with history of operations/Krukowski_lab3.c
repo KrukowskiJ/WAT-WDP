@@ -34,12 +34,14 @@ int main() {
         printf("It's decimal <--> binary converter and hexadecimal <--> octal converter with history of operations\n");
         printf("\nChoose option: \n0. Exit \n1.Dec to Bin (10)->(2)\n2.Bin to Dec (2)->(10)\n3.Hex to Oct (16)->(8) \n4.Oct to Hex (8)->(16)\n5.Screen cleaning\n6.History");
         option = _getch();
-        switch (option) {
+        switch(option) {
         case '0':
             puts("Exit");
             break;
         case '1':
-            dec_bin();
+            dec_bin(input);
+            
+            nowy_element(&head, input);
             Sleep(3000);
             break;
         case '2':
@@ -50,6 +52,7 @@ int main() {
             printf("\nYou choose hex to oct convert\n(16): "); //wprowadzenie liczby szesnastkowej bufor ustawiony na 15 znaków , max_int w 16 ma 8 znaków
             scanf_s("%s", input, 15);
             hex_oct(input);
+            printf(" print %s", input);
             nowy_element(&head, input);
             Sleep(3000);
             break;
@@ -57,6 +60,7 @@ int main() {
             printf("\nYou choose oct to hex convert\n");     //wprowadzenie liczby ósemkowej bufor ustawiony na 15 znaków , max_int w 8 ma 11 znaków
             scanf_s("%s", input, 15);
             oct_hex(input);
+            printf(" print %s ", input);
             nowy_element(&head, input);
             Sleep(3000);
             break;
@@ -75,23 +79,25 @@ int main() {
     return 0;
 }
 
-int dec_bin(){
-    int* tab = malloc(sizeof(tab));
+int dec_bin(char* tab){
     int dec, i;
+    for (int i = 0; i < 256; i++)
+        *(tab + i) == "";
     printf("Enter decimal number:\n(10) ");
     scanf_s("%d", &dec);
     if (dec >= 0) {
         for (i = 0; dec > 0; ++i) {
-            *(tab + i) = dec % 2;
+            *(tab + i) = dec % 2 + 48;
             dec /= 2;
         }
         printf("Binary of given number is:\n(2) ");
         for (i--; i >= 0; i--)
-            printf("%d", *(tab + i));
+            printf("%c", *(tab + i));
     }
     else
         puts("Your number is too low!");
 
+    printf(" print %s   dupaaaaaaaaa\n", tab);
     return *tab;
 }
 
